@@ -8,7 +8,7 @@ import time
 def _notify(text):
     msg = {'text': text}
     print(f"[{datetime.datetime.now().isoformat()}] {text}")
-    requests.post('https://hooks.slack.com/services/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', json=msg)
+    requests.post('slackurl', json=msg)
 
 
 def delete_rabbitmq(ns):
